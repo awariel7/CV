@@ -1,0 +1,244 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt,english,russian]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[russian]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabularx}{0.95\textwidth}[t]{X r}
+      \textbf{#1} & #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.9\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.9\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Natalia Krutykh} \\ \vspace{5pt}
+    \small +7 910 451 96 76 $|$ \href{mailto:nataliakrutyh@gmail.com}{\underline{nataliakrutyh@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/natalia-krutykh}{\underline{linkedin.com/in/natalia-krutykh}} $|$
+    \href{https://github.com/awariel7}{\underline{github.com/awariel7}}
+\end{center}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Solution Architect}{Sep 2022 -- Mar 2024}
+      {ICS (Intelligent Corporate Solutions)}{ics-it.ru}
+      \resumeItemListStart
+        \resumeItem{Created on the basis of the company's tools a standard BI project consisting of a set of business modules and platforms, which reduced the time of launching new projects from 6 months to 3 days.}
+        \resumeItem{Standard modules were implemented on key projects of the company, which improved user experience and reduced support volume by 30\%.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Team Lead}{Dec 2021 -- Aug 2022}
+      {ICS (Intelligent Corporate Solutions)}{ics-it.ru}
+      \resumeItemListStart
+        \resumeItem{Created the company's first onboarding program for employees to the integration team. Result: 8 out of 10 new candidates stayed after their probationary period and worked for more than 2 years.}
+        \resumeItem{Suggested and implemented metrics to determine candidate success at the end of the probationary period. Result: the best candidates were selected and strengthened the team.}
+        \resumeItem{Organized 3 internal Tech-Talks and 1 in-house conference for knowledge sharing between teams and departments. Result: the integration team started to use the tools' capabilities more widely and solve tasks more efficiently.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Lead Database Developer}{Aug 2015 -- Nov 2021}
+      {ICS (Intelligent Corporate Solutions)}{ics-it.ru}
+      \resumeItemListStart
+        \resumeItem{Had grown from junior DB developer to Lead position.}
+        \resumeItem{Developed a sales distribution algorithm (Split). Since launching into the productive loop in 2016, still running, made several versions depending on the type of data to be used.}
+        \resumeItem{A panel for controlling access to data in OLAP-cube has been developed. Implemented a tool that allows administrators to grant access to employees to certain types of data in OLAP-cube via UI, access calculation is performed using SQL and MDX.}
+        \resumeItem{Improved address standardization tool . Implemented control of the money balance for recognition and a dashboard with statistics, which made it possible to find projects with cost overruns and disable tokens for them without affecting other users.}
+        \resumeItem{Fully developed Tableau reporting portal for a client. In 2018, the portal was ranked first among the company's other regions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research laboratory assistant}{Nov 2014 -- May 2015}
+      {Federal State Budgetary Institution «Financial Research Institute»}{nifi.ru/en/}
+      \resumeItemListStart
+        \resumeItem{Diploma project. Analyzed the model of life cycle of innovation projects, created the software, which allows to calculate the probability of transition of innovation project to the next stage (expediency of project financing).The project was written in R language with the use of Shiny library. The used mathematical method was logistic regression.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lead Programmer}{Jan 2015 -- Apr 2015}
+      {Federal State Budgetary Institution "Fisheries Monitoring and Communication System Center"}{cfmc.ru}
+      \resumeItemListStart
+        \resumeItem{Development of internal software for visualization of data on fishing vessels positions, macros (MySQL, Delphi, VB)}
+        \resumeItem{Work with TRANSAS mapping interface (preparation of information on the location of training vessels for the institution's website, preparation of information for conference calls}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Leading Specialist}{Sep 2012 -- Sep 2013}
+      {Svyaznoy Bank}{www.svyaznoybank.ru}
+      \resumeItemListStart
+        \resumeItem{Development (SQL (Oracle), PL/SQL, PL+) and customization of reporting forms (daily analytical reporting of the bank, IFRS, reports on users' requests)}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Manager}{Sep 2011 -- Jan 2012}
+      {MSUESI}{mesi.ru}
+      \resumeItemListStart
+        \resumeItem{Maintaining personal files of students, maintaining a database of students studying, issuing information from the student's personal file at the request of internal structures of the university, registration of files and submission to the archive}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical University of Munich}{Munich, Germany}
+      {Master's Degree in Data engineering and analytics (unfinished)}{Apr 2024 -- Sep 2024}
+    \resumeSubheading
+      {Moscow State University of Economics, Statistics and Informatics (MESI) }{Moscow, Russia}
+      {Mathematics and Computer Science}{Sep 2010 -- Jul 2015}
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, R, LaTex} \\
+     \textbf{Frameworks}{: Flask, Django} \\
+     \textbf{DBMS}{: SQL Server, PostgreSQL, Clickhouse, Redis} \\
+     \textbf{Architecture and Design}{: REST, UML, C4}\\
+     \textbf{Distributed Systems}{: Apache Kafka} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, PyCharm, Liquibase, Grafana}
+    }}
+ \end{itemize}
+
+%
+%-----------Other SKILLS-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Russian}{: Native} \\
+     \textbf{English}{: C1 (IELTS Academic 7.5)} \\
+     \textbf{German}{: A2 (Goethe-Zertifikat)}
+    }}
+ \end{itemize}
+
+ %
+%-----------Other SKILLS-----------
+\section{Advanced training}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{OAIS: Fundamentals of architecture and integration of information systems}{: CC Kommersant\\ 2023} \\
+     \textbf{Mathematics for Data Analysis}{: HSE\\ 2019} \\
+     \textbf{Python for Data Analysis}{: HSE\\ 2019}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
